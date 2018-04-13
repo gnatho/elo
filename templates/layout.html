@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY PROJECT</title>
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% include 'includes/_navbar.html' %}
+    {% block body %}{% endblock %}
+
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
+</html>
